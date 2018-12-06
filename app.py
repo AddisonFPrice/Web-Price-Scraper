@@ -20,4 +20,3 @@ else:
 
 # HTML target for the data we're scraping
 # <span class="price">$350.00</span>
-
