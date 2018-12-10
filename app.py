@@ -1,5 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
+import pymongo
+
+#MongoDB Universal Resource Identifier
+mongodb_uri = "mongodb://127.0.0.1:27017"
+
+#Connect to mongodb processes through the client
+client = pymongo.MongoClient(mongodb_uri)
+
+#Specifies the database within the URI & client
+database = client['db1']
+
 
 
 request = requests.get("https://www.filson.com/small-rugged-twill-duffle-bag.html#sku=11070220-fco-000971914")
